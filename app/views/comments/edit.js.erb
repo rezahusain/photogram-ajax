@@ -1,0 +1,3 @@
+var edit = "<%=j(render "comments/form", comment: @comment)%>";
+
+$("#<%=dom_id(@comment)%>").replaceWith(edit);
