@@ -1,0 +1,5 @@
+var current_state = $(".<%=dom_id(@follow_request.sender)%>_<%=dom_id(@follow_request.recipient)%>");
+
+var updated_state = $("<%=j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient)%>");
+
+current_state.replaceWith(updated_state);
